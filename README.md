@@ -1,8 +1,7 @@
 # goblin mode — Discord rich presence for AI coding
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/leonardomjq.goblin-mode?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=leonardomjq.goblin-mode)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/leonardomjq.goblin-mode?label=installs)](https://marketplace.visualstudio.com/items?itemName=leonardomjq.goblin-mode)
 [![OpenVSX](https://img.shields.io/open-vsx/v/leonardomjq/goblin-mode?label=OpenVSX)](https://open-vsx.org/extension/leonardomjq/goblin-mode)
+[![OpenVSX Downloads](https://img.shields.io/open-vsx/dt/leonardomjq/goblin-mode?label=downloads)](https://open-vsx.org/extension/leonardomjq/goblin-mode)
 [![CI](https://github.com/leonardomjq/goblin-mode/actions/workflows/ci.yml/badge.svg)](https://github.com/leonardomjq/goblin-mode/actions/workflows/ci.yml)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/leonardomjq/goblin-mode/badge)](https://scorecard.dev/viewer/?uri=github.com/leonardomjq/goblin-mode)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -58,17 +57,16 @@ If you use codex / gemini / opencode and detection misses, [file an issue](https
 
 ## Install
 
-### VS Code
-
-Search **"goblin mode"** in the Extensions sidebar (`Cmd+Shift+X` / `Ctrl+Shift+X`), or:
-
-```
-ext install leonardomjq.goblin-mode
-```
-
 ### Cursor / VSCodium / Windsurf
 
-Same — search **"goblin mode"** in Extensions. Pulls from OpenVSX automatically.
+Search **"goblin mode"** in the Extensions sidebar (`Cmd+Shift+X` / `Ctrl+Shift+X`). These editors pull from [OpenVSX](https://open-vsx.org/extension/leonardomjq/goblin-mode) automatically.
+
+### VS Code
+
+Stock VS Code only searches the Microsoft Marketplace, where this extension isn't listed. Install the `.vsix` directly instead:
+
+1. Download the latest `goblin-mode-*.vsix` from [OpenVSX](https://open-vsx.org/extension/leonardomjq/goblin-mode) or the [GitHub Releases](https://github.com/leonardomjq/goblin-mode/releases) page.
+2. Run: `code --install-extension goblin-mode-*.vsix`
 
 ### Companion plugin (optional, recommended)
 
@@ -216,7 +214,7 @@ Env-var override for ad-hoc / CI use: `AGENT_MODE_CLIENT_ID=your-id-here code .`
 This extension ships zero telemetry. What's visible elsewhere:
 
 - **Discord Developer Portal** (private to the maintainer) shows DAU/MAU and activity counts for Client ID `1493599126217297981`. Use your own Client ID per "Custom Discord Client ID" above to opt out entirely.
-- **VS Code Marketplace** and **OpenVSX** show public install counts on the listing pages.
+- **OpenVSX** shows public install counts on the listing page.
 
 </details>
 
